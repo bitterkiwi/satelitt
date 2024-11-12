@@ -37,8 +37,6 @@ window.addEventListener('resize', () =>
     })
 
 
-
-
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 1000)
 camera.position.z = 6
 camera.lookAt(mesh4.position)
@@ -63,9 +61,6 @@ window.addEventListener('mousemove', (event) =>
     })
 
 
-
-
-
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
@@ -74,8 +69,6 @@ let angle = 0;
 let smallAngle = 0; //satelitt
 
 renderer.setSize(sizes.width, sizes.height)
-
-
 
 
 const tick = () =>
@@ -90,7 +83,7 @@ const tick = () =>
     camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 2
     camera.position.z = Math.cos(cursor.x * Math.PI * 2) * 2
     camera.position.y = cursor.y * 30
-    camera.lookAt(mesh3.position)
+    camera.lookAt(mesh4.position)
 
 
  
