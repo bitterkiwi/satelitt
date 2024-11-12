@@ -73,11 +73,12 @@ const tick = () =>
 
     angle += 0.1/60;
     console.log(mesh4.position)
+    
 
     camera.position.x = Math.sin(cursor.x * Math.PI * 2) * 2
     camera.position.z = Math.cos(cursor.x * Math.PI * 2) * 2
-    camera.position.y = cursor.y * 3
-    camera.lookAt(mesh4.position)
+    camera.position.y = cursor.y * 30
+    camera.lookAt(mesh3.position)
 
 
  
